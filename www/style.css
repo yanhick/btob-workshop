@@ -4,6 +4,7 @@
 
 body {
     background: gray;
+    background: url('back.jpg');
 }
 
 h1 {
