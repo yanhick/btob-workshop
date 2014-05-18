@@ -4,31 +4,44 @@
 
 body {
     background: gray;
-    background: url('back.jpg');
 }
 
 h1 {
+    font-size: 40px;
+    color: #222222;
     text-decoration: underline;
     text-transform: uppercase;
 }
 
-h1::first-letter {
-    font-size: 32px;
+p {
+    font: 16px serif;
 }
 
 h2 {
-    border: dashed gray;
+    text-align: center;
     padding: 5px;
+    border: dashed gray;
+}
+
+#content {
+    margin: auto;
+    width: 500px;
+    background: white;
+    padding: 20px;
+}
+
+.photo {
+    float: right;
+}
+
+h2 {
     clear: both;
 }
 
-h2:before {
-    content: '>';
+h1::first-letter {
+    font-size: 48px;
 }
 
-h2:after {
-    content: '<';
-}
 
 li {
     list-style: none;
@@ -42,17 +55,8 @@ ul li:nth-child(even) {
     background: gray;
 }
 
-.photo {
-    text-align: center;
-    float: right;
-}
-
-#content {
-    margin: auto;
-    width: 500px;
-    background: white;
-    padding: 20px;
-    box-shadow: 10px 10px 5px;
+body {
+    background: url('back.jpg');
 }
 
 a[href="contact.html"] {
@@ -71,4 +75,28 @@ a[href="contact.html"]:hover {
 
 a[href="contact.html"]:active {
     background: orange;
+}
+
+#content {
+    box-shadow: 10px 10px 5px;
+}
+
+h2:before {
+    content: '>';
+}
+
+h2:after {
+    content: '<';
+}
+
+/** contact */
+
+label {
+    font-weight: bold;
+}
+
+input[type=email], textarea {
+    padding-top: 10px;
+    display: block;
+    width: 400px;
 }
