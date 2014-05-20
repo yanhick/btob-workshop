@@ -38,11 +38,6 @@ h2 {
     clear: both;
 }
 
-h1::first-letter {
-    font-size: 48px;
-}
-
-
 li {
     list-style: none;
 }
@@ -61,11 +56,12 @@ body {
 
 a[href="contact.html"] {
     background: blue;
-    border-radius: 5px;
     padding: 5px;
     color: white;
     font-size: 18px;
     text-decoration: none;
+
+    border-radius: 5px;
     transition: 1s;
 }
 
@@ -87,6 +83,10 @@ h2:before {
 
 h2:after {
     content: '<';
+}
+
+h1::first-letter {
+    font-size: 48px;
 }
 
 /** contact */
