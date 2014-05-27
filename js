@@ -1,0 +1,19 @@
+- html pour le contenu du site
+- css pour l'apparence
+- js pour le comportement
+- on va reagir aux interactions de l'utilisateur
+- js est un language de programmation
+- pour ecrire des programmes informatique
+- programme sert a traiter des donnee
+- input/output
+- input interaction utilisateur
+- une suite d'instruction pour l'ordinateur
+- un language a une syntaxe comme un language naturel
+- il existe des centaines de language de programmation
+- JS a l'origine cree pour Netscape (liveScript ) pour 
+dynamiser des page
+- renommer JavaScript pour des raisons commercial
+- Microsoft copie pour ie
+- Le navigateur charge le javascript et l'execute
+- un standard ecmascript
+- De nouvelle fonctionnalite ajouter et les navigateurs sont mis a jour
