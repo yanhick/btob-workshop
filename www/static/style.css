@@ -1,0 +1,102 @@
+* {
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    background: gray;
+}
+
+h1 {
+    font-size: 40px;
+    color: #222222;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p {
+    font: 16px serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    border: dashed gray;
+}
+
+#content {
+    margin: auto;
+    width: 500px;
+    background: white;
+    padding: 20px;
+}
+
+.photo {
+    float: right;
+}
+
+h2 {
+    clear: both;
+}
+
+li {
+    list-style: none;
+}
+
+ul li:nth-child(odd) {
+    background: #0000CC;
+}
+
+ul li:nth-child(even) {
+    background: gray;
+}
+
+body {
+    background: url('back.jpg');
+}
+
+a[href="contact.html"] {
+    background: blue;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+    border-radius: 5px;
+    transition: 1s;
+}
+
+a[href="contact.html"]:hover {
+    background: purple;
+}
+
+a[href="contact.html"]:active {
+    background: orange;
+}
+
+#content {
+    box-shadow: 10px 10px 5px;
+}
+
+h2:before {
+    content: '>';
+}
+
+h2:after {
+    content: '<';
+}
+
+h1::first-letter {
+    font-size: 48px;
+}
+
+/** contact */
+
+label {
+    font-weight: bold;
+}
+
+input[type=email], textarea {
+    padding-top: 10px;
+    display: block;
+    width: 400px;
+}

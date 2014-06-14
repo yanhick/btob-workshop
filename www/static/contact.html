@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"></link>
+        <script src="script.js"></script>
+        <meta charset="utf-8">
+        <title>Contactez moi</title>
+    </head>
+    <body>
+        <div id="content">
+            <h1>Contactez moi</h1>
+            <form id="contact" action="/contact" method="POST">
+                <div>
+                    <label>ton email: <input name="email" type="email" /></label>
+                </div>
+                <div>
+                    <label>ton message: <textarea name="message" id="message"></textarea></label>
+                </div>
+                <div>
+                    <input type="reset" value="effacer" />
+                    <input type="submit" value="envoyer" />
+                </div>
+            </form>
+            <a href="index.html">Retour</a>
+        </div>
+    </body>
+</html>
+
