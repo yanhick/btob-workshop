@@ -1,0 +1,18 @@
+
+- node.js 2
+- creation d'un site dynamique
+- donne personalise
+- le HTML est genere plutot que d'etre ecris a l'avance
+- utiliser une BDD
+- persistance des donne
+- stockent les donne dans des fichier optimiser pour la lecture et l'ecriture
+- serveur de BDD
+- l'application node.js va se connecter au serveur de BDD
+- PHP/MYSQL
+- node.js/mongodb
+- BDD relationel
+- BDD document
+- CRUD
+- Pour generer HTML on utilise des template
+- mustache language de template
+
