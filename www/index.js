@@ -35,7 +35,6 @@ var transport = nodemailer.createTransport('SMTP', {
 });
 
 app.post('/contact', function (req, res) {
-    console.log(req.body);
 
     transport.sendMail({
         from: req.body.email,
@@ -48,6 +47,24 @@ app.post('/contact', function (req, res) {
     });
 
     res.redirect('index.html');
+});
+
+var basicAuth = require('basic-auth-connect');
+
+app.get('/admin', basicAuth('yannick', 'pouet'), function (req, res) {
+  res.redirect('admin.html');
+});
+
+app.post('/experience', function (req, res) {
+    var experiences = db.get('experiences');
+    experiences.insert({
+        year: req.body.year,
+        description: req.body.description
+    },
+    function (err, docs) {
+        if (err) return res.send('There was a problem writing to the database');
+        res.redirect('/');
+    });
 });
 
 app.get('/', function (req, res) {
