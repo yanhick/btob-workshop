@@ -9,8 +9,18 @@ server.listen(3000);
 
 var express = require('express');
 var bodyParser = require('body-parser');
+var expressHbs = require('express3-handlebars');
+
+var mongo = require('mongodb');
+var monk = require('monk');
+var mongoUri = 'localhost:27017/btob';
+var db = monk(mongoUri);
 
 var app = express();
+
+app.engine('hbs', expressHbs({extname:'hbs'}));
+app.set('view engine', 'mustache');
+app.set('views', __dirname + '/views');
 
 app.use(express.static(__dirname + '/static/'));
 app.use(bodyParser.urlencoded());
@@ -38,6 +48,14 @@ app.post('/contact', function (req, res) {
     });
 
     res.redirect('index.html');
-})
+});
+
+app.get('/', function (req, res) {
+    var experiences = db.get('experiences');
+    experiences.find({}, {}, function (err, docs) {
+        if (err) return res.send(err.toString());
+        res.render('index.hbs', {experiences: docs});
+    });
+});
 
 app.listen(4000);

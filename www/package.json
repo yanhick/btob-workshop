@@ -1,0 +1,19 @@
+{
+  "name": "cv",
+  "version": "0.0.0",
+  "description": "my cv site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.5.1",
+    "express3-handlebars": "^0.5.0",
+    "mongodb": "^1.4.7",
+    "monk": "^0.9.0",
+    "nodemailer": "^0.7.0"
+  }
+}
